@@ -1,0 +1,33 @@
+CAPI=1
+[main]
+component =
+ de0_nano_clkgen.1.0.xml
+ de0_nano_mor1kx.3.1.xml
+ de0_nano_wb_intercon.1.0.xml
+ de0_nano_wb_sdram_ctrl.1.0.xml
+ de0_nano.1.0.xml
+
+depend =
+ adv_debug_sys
+ altera_virtual_jtag
+ de0_nano_bootrom
+ gpio
+ mor1kx-3.1
+ or1k_bootloaders-0.9
+ simple_spi-1.6
+ uart16550-1.5.4
+ wb_intercon-1.0
+ wb_sdram_ctrl
+
+simulators =
+ icarus
+ modelsim
+
+[icarus]
+depend = elf-loader jtag_tap-1.13 jtag_vpi mt48lc16m16a2 s25fl064p-1.7 vlog_tb_utils
+iverilog_options = -DICARUS_SIM -DSIM
+
+[modelsim]
+depend = elf-loader jtag_tap-1.13 jtag_vpi mt48lc16m16a2 vlog_tb_utils
+vlog_options = +define+SIM +define+MODELSIM_SIM
+vsim_options = -L altera_mf_ver -L altera_mf

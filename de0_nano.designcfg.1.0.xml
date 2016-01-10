@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:designConfiguration xmlns:kactus2="http://funbase.cs.tut.fi/" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.5 http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.5/index.xsd">
+	<spirit:vendor>librecores.org</spirit:vendor>
+	<spirit:library>soc</spirit:library>
+	<spirit:name>de0_nano.designcfg</spirit:name>
+	<spirit:version>1.0</spirit:version>
+	<spirit:designRef spirit:vendor="librecores.org" spirit:library="soc" spirit:name="de0_nano.design" spirit:version="1.0"/>
+	<spirit:viewConfiguration>
+		<spirit:instanceName>adv_debug_sys</spirit:instanceName>
+		<spirit:viewName>rtl</spirit:viewName>
+	</spirit:viewConfiguration>
+	<spirit:viewConfiguration>
+		<spirit:instanceName>altera_virtual_jtag</spirit:instanceName>
+		<spirit:viewName>flat</spirit:viewName>
+	</spirit:viewConfiguration>
+	<spirit:viewConfiguration>
+		<spirit:instanceName>bootrom</spirit:instanceName>
+		<spirit:viewName>rtl</spirit:viewName>
+	</spirit:viewConfiguration>
+	<spirit:viewConfiguration>
+		<spirit:instanceName>clkgen</spirit:instanceName>
+		<spirit:viewName>rtl</spirit:viewName>
+	</spirit:viewConfiguration>
+	<spirit:viewConfiguration>
+		<spirit:instanceName>gpio_led</spirit:instanceName>
+		<spirit:viewName>rtl</spirit:viewName>
+	</spirit:viewConfiguration>
+	<spirit:viewConfiguration>
+		<spirit:instanceName>mor1kx</spirit:instanceName>
+		<spirit:viewName>rtl</spirit:viewName>
+	</spirit:viewConfiguration>
+	<spirit:viewConfiguration>
+		<spirit:instanceName>mor1kx_irq</spirit:instanceName>
+		<spirit:viewName>flat</spirit:viewName>
+	</spirit:viewConfiguration>
+	<spirit:viewConfiguration>
+		<spirit:instanceName>spi_flash_ctrl</spirit:instanceName>
+		<spirit:viewName>flat</spirit:viewName>
+	</spirit:viewConfiguration>
+	<spirit:viewConfiguration>
+		<spirit:instanceName>uart</spirit:instanceName>
+		<spirit:viewName>rtl</spirit:viewName>
+	</spirit:viewConfiguration>
+	<spirit:viewConfiguration>
+		<spirit:instanceName>wb_intercon</spirit:instanceName>
+		<spirit:viewName>rtl</spirit:viewName>
+	</spirit:viewConfiguration>
+	<spirit:viewConfiguration>
+		<spirit:instanceName>wb_sdram_ctrl</spirit:instanceName>
+		<spirit:viewName>rtl</spirit:viewName>
+	</spirit:viewConfiguration>
+	<spirit:vendorExtensions>
+		<kactus2:extensions>
+			<kactus2:kts_attributes>
+				<kactus2:kts_implementation>HW</kactus2:kts_implementation>
+			</kactus2:kts_attributes>
+		</kactus2:extensions>
+		<kactus2:configurableElementValues>
+			<kactus2:componentInstance>
+				<kactus2:uuid>{0eb721ab-647d-4f56-8a7b-494c9b9257b6}</kactus2:uuid>
+				<kactus2:configurableElementValue referenceId="{5105f9eb-4299-405d-8633-3948da037e7d}" value="32'hf0000100"/>
+			</kactus2:componentInstance>
+			<kactus2:componentInstance>
+				<kactus2:uuid>{e0173a5e-2534-488b-83a9-5144baa229ce}</kactus2:uuid>
+				<kactus2:configurableElementValue referenceId="uuid_1e88af56_3e27_40ca_85f2_d09464da88c9" value="&quot;../src/or1k_bootloaders-0.9/clear_r3_and_jump_to_0x100.vh&quot;"/>
+				<kactus2:configurableElementValue referenceId="uuid_44a888c0_8bd9_4568_bb2a_e0c99f556785" value="64"/>
+			</kactus2:componentInstance>
+			<kactus2:componentInstance>
+				<kactus2:uuid>{d5068912-2621-407a-b411-d19db2e50775}</kactus2:uuid>
+				<kactus2:configurableElementValue referenceId="uuid_1e88af56_3e27_40ca_85f2_d09464da88c9" value="&quot;../src/or1k_bootloaders-0.9/clear_r3_and_jump_to_0x100.vh&quot;"/>
+				<kactus2:configurableElementValue referenceId="uuid_44a888c0_8bd9_4568_bb2a_e0c99f556785" value="64"/>
+			</kactus2:componentInstance>
+		</kactus2:configurableElementValues>
+	</spirit:vendorExtensions>
+</spirit:designConfiguration>

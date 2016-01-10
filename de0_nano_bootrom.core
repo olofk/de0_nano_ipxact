@@ -1,0 +1,5 @@
+CAPI=1
+[main]
+component = de0_nano_bootrom.0.xml
+depend =
+ or1k_bootloaders-0.9
